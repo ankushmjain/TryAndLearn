@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="home-box custom-box ">
+        <p>Total number of questions: <span class="total-questions">4</span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Start </button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+        <div class="question-number"> </div>
+
+        <div class="question-text">
+
+        </div>
+
+        <div class="Option-container">
+
+        </div>
+
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">NEXT</button>
+        </div>
+
+    </div>
+
+    <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span class="total-questions"></span></td>
+            </tr>
+            <tr>
+                <td>Attemps</td>
+                <td><span class="total-attemps"></span></td>
+            </tr>
+            <tr>
+                <td>correct</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Score</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgain()"> Try Again </button>
+        <button type="button" class="btn" onclick="backToHome()"> <a href="/index.html">go to Home</a> </button>
+        <button type="button" class="btn"> <a href="result.html">Previous Scores</a> </button>
+    </div>
+
+
+    <script src="quiz.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
